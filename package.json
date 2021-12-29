@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -c -w"
+    "watch": "rollup -c -w",
+    "test": "echo \"Info: no test\""
   },
   "author": "mkpoli <mkpoli@mkpo.li>",
   "license": "GPLv3",
