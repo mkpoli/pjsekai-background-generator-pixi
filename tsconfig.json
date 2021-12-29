@@ -5,8 +5,16 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "moduleResolution": "Node",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": ".",
+    "declarationMap": false,
   },
   "include": [
-    "src/**/*.ts",
+    "src",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ],
 }

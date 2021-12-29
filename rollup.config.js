@@ -5,7 +5,7 @@ import pkg from './package.json';
 
 export default {
   input: 'src/index.ts',
-  plugins: [typescript(), image()],
+  plugins: [typescript(({ tsconfig: './tsconfig.json' })), image()],
   output: [
     {
       name: 'bggen',
@@ -15,6 +15,7 @@ export default {
       globals: {
         'pixi.js': 'PIXI'
       },
+      sourcemap: true
     },
     {
       name: 'bggen',
@@ -23,6 +24,7 @@ export default {
       globals: {
         'pixi.js': 'PIXI'
       },
+      sourcemap: true
     },
     {
       file: pkg.module,
@@ -31,6 +33,7 @@ export default {
       globals: {
         'pixi.js': 'PIXI'
       },
+      sourcemap: true
     },
     {
       file: 'dist/bg-gen.esm.js',
@@ -38,6 +41,7 @@ export default {
       globals: {
         'pixi.js': 'PIXI'
       },
+      sourcemap: true
     }
   ],
   external: ['pixi.js']
