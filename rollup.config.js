@@ -11,29 +11,34 @@ export default {
       name: 'bggen',
       file: pkg.browser,
       format: 'umd',
-      sourceMap: true,
-      plugins: [terser()]
+      plugins: [terser()],
+      globals: {
+        'pixi.js': 'PIXI'
+      },
     },
     {
       name: 'bggen',
       file: 'dist/bg-gen.umd.js',
       format: 'umd',
-      sourceMap: true,
+      globals: {
+        'pixi.js': 'PIXI'
+      },
     },
     {
       file: pkg.module,
       format: 'es',
       plugins: [terser()],
-      sourceMap: true
+      globals: {
+        'pixi.js': 'PIXI'
+      },
     },
     {
       file: 'dist/bg-gen.esm.js',
       format: 'es',
-      sourceMap: true
+      globals: {
+        'pixi.js': 'PIXI'
+      },
     }
   ],
-  globals: {
-    'pixi.js': 'PIXI'
-  },
-  externals: ['pixi.js']
+  external: ['pixi.js']
 }
