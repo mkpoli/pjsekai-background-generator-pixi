@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../node_modules/pixi.js/dist/browser/pixi.js"></script>
+    <script src="../dist/bg-gen.umd.js"></script>
+</head>
+<body>
+    <input type="file" id="file-input" />
+    <img id="uploaded" />
+    <img id="image" />
+    <script lang="text/javascript">
+        const fileInput = document.getElementById("file-input")
+        const uploaded = document.getElementById("uploaded")
+        const image = document.getElementById("image")
+        fileInput.addEventListener("change", async () => {
+            console.log('onchange')
+            const file = fileInput.files?.[0]
+            console.log('file', file)
+            if (!file) return
+            uploaded.src = URL.createObjectURL(file)
+            const blob = await bggen.generate(file)
+            image.src = URL.createObjectURL(blob)
+        })
+    </script>
+</body>
+</html>
