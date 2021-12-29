@@ -43,3 +43,8 @@ $ pnpm watch
 - **S** for **S**tyle (Styling, Visual Design Adjustments, etc.)
 - **V** for **V**ersion (Versioning, Dependencies, Licensing, etc.)
 - **I** for **I**18n (Translation, Localisation, etc.)
+
+## Acknowledgement
+
+- Some of the data and assets are from [FriedPotato](https://github.com/sevenc-nanashi/FriedPotato) server.
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=sevenc-nanashi&repo=FriedPotato&theme=gradient&bg_color=30,ff57ab,6040ff&title_color=fff&text_color=fff)](https://github.com/sevenc-nanashi/FriedPotato)
