@@ -1,0 +1,11 @@
+{
+  "name": "pjsekai-background-generator-pixi",
+  "version": "1.0.0",
+  "description": "Generate PJSekai background by PixiJS.",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "author": "mkpoli",
+  "license": "GPLv3"
+}
