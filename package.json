@@ -11,7 +11,8 @@
     "prebuild": "rimraf dist",
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "test": "echo \"Info: no test\""
+    "test": "echo \"Info: no test\"",
+    "publish": "np"
   },
   "author": "mkpoli <mkpoli@mkpo.li>",
   "license": "GPLv3",
@@ -20,7 +21,6 @@
   ],
   "module": "dist/bg-gen.esm.min.js",
   "browser": "dist/bg-gen.umd.min.js",
-  "types": "dist/index.d.ts",
   "devDependencies": {
     "@rollup/plugin-image": "^2.1.1",
     "rimraf": "^3.0.2",
@@ -36,5 +36,10 @@
   "keywords": [
     "pixi.js",
     "pjsekai"
-  ]
+  ],
+  "np": {
+    "yarn": false,
+    "cleanup": false,
+    "message": "V: Release v%s"
+  }
 }
