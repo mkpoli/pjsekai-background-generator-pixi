@@ -1,11 +1,11 @@
 import { terser } from 'rollup-plugin-terser'
-import typescript from '@rollup/plugin-typescript'
+import ts from 'rollup-plugin-ts'
 import image from '@rollup/plugin-image'
 import pkg from './package.json';
 
 export default {
   input: 'src/index.ts',
-  plugins: [typescript(({ tsconfig: './tsconfig.json' })), image()],
+  plugins: [ts(), image()],
   output: [
     {
       name: 'bggen',
