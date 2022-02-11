@@ -19,6 +19,8 @@
   "files": [
     "dist"
   ],
+  "source": "dist/bg-gen.esm.js",
+  "main": "dist/bg-gen.esm.min.js",
   "module": "dist/bg-gen.esm.min.js",
   "browser": "dist/bg-gen.umd.min.js",
   "devDependencies": {
